@@ -1,0 +1,70 @@
+Chai_type: masala_chai #Inline comment
+
+chai_recipe_one:
+  base: black_tea
+  milk: whole_milk
+
+chai_recip_two:
+  base: black_tea
+  milk: almond_milk
+
+chai_name: "Masala Chai"
+description: "Chai with masala and ginger"
+tagline: "The best chai in town"
+
+brewing_instruction_1: |
+  boil water
+  add tea leave
+  add milk
+
+brewing_instruction_2: >
+  boil water
+  add tea leave
+  add milk
+
+cups_per_day: 3
+science_test: 3.4e+2
+
+am_i_hot: true
+# other was to write true or false
+# add_sugar: yes
+# add_salt: no
+# instant: off
+
+# to represent null in the file
+# sweetner: null
+# alternative_milk: ~
+
+time_stamp: 2025-07-10
+
+local_time: 2025-07-10 12:09:20
+
+# Collections
+spices:
+  - cardamom
+  - ginger
+  - clove
+
+spices_2: [cardamom, ginger, cloves]
+
+chai_categories:
+  - name: Traditional_chai
+    varities:
+      - masala
+      - lemon
+
+def_chai_base: &default_chai
+  tea: black_tea
+  water: 200ml
+  brewing_time: 5
+
+morning_chai:
+  <<: *default_chai
+  milk: 100ml # additional elements
+
+zip_code: !!str 134 #forcing to string
+count: !!int "1234" #forcing to integer
+
+unique_set: !!set
+  ? ginger
+  ? teri behen ki number de
